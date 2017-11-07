@@ -1,0 +1,11 @@
+{
+    "apps": [
+        {
+            "cwd" : "/opt/china_tower/",
+            "name": "china.tower-1.0-SNAPSHOT.jar"
+        }
+    ],
+    "activated": true,
+    "polling_interval": 10,
+    "log_file": "jarMonitor.log" 
+}
