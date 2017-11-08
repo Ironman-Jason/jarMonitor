@@ -20,7 +20,7 @@ This is a lightweight tool written in python to monitor jar applications in your
           }
 
       2. run it:
-        > python jarMonitor.py &
+        > nohup python jarMonitor.py &
 
       3. Hot reload is supported:
          To edit the apps list, "activated" flag and "polling_interval", you DON'T need to restart the monitor.
