@@ -89,9 +89,9 @@ def is_process_match_with_app(id, app_name):
 
 
 def pull_up_app(cwd, app_name):
-    jar_file = cwd + app_name
-    logging.info('Pull up app: ' + cwd + app_name)
-    subprocess.call(['java', '-jar', jar_file])
+    jar_file = app_name
+    logging.info('Pull up app: ' + app_name)
+    subprocess.call(['java', '-jar', jar_file, '&'], cwd=cwd)
 
 
 def start_monitoring():
