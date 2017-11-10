@@ -103,6 +103,10 @@ def start_monitoring():
             app_list = conf["apps"]
             is_actvivated = conf["activated"]
         except KeyError as e:
+            logging.info('parameter missing in conf.json file.')
+            continue
+        except TypeError as e:
+            logging.info('please check your conf.json file.')
             continue
 
         if is_actvivated is False:
