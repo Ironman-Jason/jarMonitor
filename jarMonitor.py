@@ -106,7 +106,7 @@ def start_monitoring():
             continue
 
         if is_actvivated is False:
-            logging.info('monitor is standby due to the activated is false')
+            logging.info('monitor is standby. To start the polling, please edit the conf.json.')
             continue
 
         for app in app_list:
